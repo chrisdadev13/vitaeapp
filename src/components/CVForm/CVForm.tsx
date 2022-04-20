@@ -1,8 +1,20 @@
-import React from "react";
+import React, { FormEventHandler } from "react";
+import NameForm from "./NameForm";
 
-const CVForm = () => {
+type Object = {
+  [key: string]: any
+}
+
+interface iProps {
+  cvData: Object;
+  handleChange: FormEventHandler;
+}
+
+const CVForm = ({cvData, handleChange}: iProps) => {
   return(
-    <h1>CV Form</h1>
+    <div>
+      <NameForm cvData={cvData} handleChange={handleChange}/>
+    </div>
   )
 }
 
