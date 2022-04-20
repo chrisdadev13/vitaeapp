@@ -10,7 +10,7 @@ interface iProps {
   formError: Boolean;
 }
 
-const NameForm= ({cvData, handleChange, formError}: iProps) => {
+const NameForm = ({cvData, handleChange, formError}: iProps) => {
   return(
     <div className="mt-10">
       <div id="title" className="flex justify-center flex-col items-center">
