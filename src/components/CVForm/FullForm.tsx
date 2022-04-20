@@ -1,10 +1,19 @@
-import React from "react";
+import React, { FormEventHandler } from "react";
 import PersonalData from "./PersonalData";
 
-const FullForm: React.FC = () => {
+type Object = {
+  [key: string]: any
+}
+
+interface Props {
+  cvData: Object;
+  handleChange: FormEventHandler;
+}
+
+const FullForm = ({cvData, handleChange}: Props) => {
   return(
     <>
-      <PersonalData />
+      <PersonalData cvData={cvData} handleChange={handleChange}/>
     </>
   )
 }
