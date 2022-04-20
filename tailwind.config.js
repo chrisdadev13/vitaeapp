@@ -19,6 +19,7 @@ module.exports = {
         'fadeIn-1': 'fade 1s linear',
         'fadeIn-3': 'fade 3s linear',
         'border-fadeIn': 'fadeBorder 0.5s ease-in-out',
+        'shake-1': 'shake, 2s linear'
       },
       keyframes: {
         fade: {
@@ -31,6 +32,10 @@ module.exports = {
                     borderColor: '#60a5fa'
           },
           '100%': { borderWidth: '0' }
+        },
+        shake: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
         }
       }
     },
