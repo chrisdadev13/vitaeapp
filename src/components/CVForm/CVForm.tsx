@@ -65,7 +65,7 @@ const CVForm = ({cvData, handleChange}: iProps) => {
         <EmailForm cvData={cvData} handleChange={handleChange} formError={showEmailError}/>
       }
       {currentForm == 3 &&
-        <FullForm />
+        <FullForm cvData={cvData} handleChange={handleChange}/>
       }
       <div className="flex items-center justify-center mt-10">
         {currentForm == 2 &&
