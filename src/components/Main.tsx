@@ -11,7 +11,11 @@ const Main: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [currentForm, setCurrentForm] = useState<number>(1);
 
-  const [cv, setCv] = useState<Object>({});
+  const [cv, setCv] = useState<Object>({
+    userName: "",
+    userLastName: "",
+    userEmail: "",
+  });
 
   const handleData: FormEventHandler<HTMLInputElement> = (e: React.ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name;
