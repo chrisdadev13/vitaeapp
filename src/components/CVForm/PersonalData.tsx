@@ -29,7 +29,7 @@ const PersonalData = ({cvData, handleChange}: Props) => {
   return(
     <div className="lg:flex lg:mx-20 lg:flex-col lg:items-center flex flex-col items-center">
       <div id="title-container">
-        <h3 className="animate-fadeIn-3 text-blue-400 flex text-1xl lg:text-2xl font-semibold">Datos personales</h3>
+        <h3 className="animate-fadeIn-1 text-blue-400 flex text-1xl lg:text-2xl font-semibold">Datos personales</h3>
       </div>
         <div className="flex flex-col sm:flex-row mt-5">
           <div className="mr-5">
