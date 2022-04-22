@@ -27,11 +27,11 @@ const PersonalData = ({cvData, handleChange}: Props) => {
   }
 
   return(
-    <div className="lg:m-auto mt-10 w-2/5 h-2/3 p-4 mx-64">
+    <div className="lg:flex lg:mx-20 lg:flex-col lg:items-center flex flex-col items-center">
       <div id="title-container">
         <h3 className="animate-fadeIn-3 text-blue-400 flex text-1xl lg:text-2xl font-semibold">Datos personales</h3>
       </div>
-        <div className="flex mt-5">
+        <div className="flex flex-col sm:flex-row mt-5">
           <div className="mr-5">
             <p className="text-1xl text-gray-600">Title</p>
             <input 
@@ -51,7 +51,7 @@ const PersonalData = ({cvData, handleChange}: Props) => {
               />
           </div>
         </div>
-        <div className="flex mt-2">
+        <div className="flex flex-col sm:flex-row mt-2">
           <div className="mr-5">
             <p className="text-1xl text-gray-600">Nombre</p>
             <input 
@@ -73,7 +73,7 @@ const PersonalData = ({cvData, handleChange}: Props) => {
               />
           </div>
         </div>
-        <div className="flex mt-2">
+        <div className="flex flex-col sm:flex-row mt-2">
           <div className="mr-5">
             <p className="text-1xl text-gray-600">Email</p>
             <input 
@@ -94,7 +94,7 @@ const PersonalData = ({cvData, handleChange}: Props) => {
         </div>
         {active == true &&
         <div>
-          <div className="flex mt-2 animate-fadeIn-1">
+          <div className="flex flex-col sm:flex-row mt-2 animate-fadeIn-1">
             <div className="mr-5">
               <p className="text-1xl text-gray-600">Pais</p>
               <input 
@@ -110,7 +110,7 @@ const PersonalData = ({cvData, handleChange}: Props) => {
                 />
             </div>
           </div>
-          <div className="flex mt-2 animate-fadeIn-1">
+          <div className="flex flex-col sm:flex-row mt-2 animate-fadeIn-1">
             <div className="mr-5">
               <p className="text-1xl text-gray-600">Dirección</p>
               <input 
@@ -126,7 +126,7 @@ const PersonalData = ({cvData, handleChange}: Props) => {
                 />
             </div>
           </div>
-          <div className="flex mt-2 animate-fadeIn-1">
+          <div className="flex flex-col sm:flex-row mt-2 animate-fadeIn-1">
             <div className="mr-5">
               <p className="text-1xl text-gray-600">Nacionalidad</p>
               <input 
